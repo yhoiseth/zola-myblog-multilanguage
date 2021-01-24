@@ -1,22 +1,21 @@
-# The URL the site will be built for
 base_url = "https://example.com"
-
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+compile_sass = false
+default_language = "en"
 
 languages = [
-    {code = "fr", feed = true}, # there will be a feed for French content
-    {code = "fr", search = true}, # there will be a Search Index for French content
-    {code = "it"}, # there won't be a feed for Italian content
+    {code = "no"},
 ]
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = false
+
+[translations]
+[translations.en]
+title = "Yngve Hoiseth"
+
+[translations.no]
+title = "Yngve Høiseth"
 
 [extra]
 # Put all your custom variables here
